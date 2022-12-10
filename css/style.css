@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+:root {
+    --transparentBackground: rgba(255, 255, 255, 0.429);
+    --brandColor: rgba(69, 9, 116,1);
+}
+
+/* Text Styles */
+
+h1 {
+    font-size: 32px;
+    color: var(--brandColor);
+}
+
+/* Nav Bar */
+
+#logoImg {
+    height: 75px;
+}
+
+li {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+a {
+    color: var(--brandColor) !important;
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    background-image: linear-gradient(to top,
+    rgba(255,255,255,0.3),
+    rgba(255,255,255,1));
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0px 15px;
+
+}
+
+.jumbotron {
+    height: 50vh;
+    background-image: url(../images/desktop-hero-rob-hiking-sunset.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.jumboCopy {
+    padding: 10px;
+    display: flex;
+    background-color: var(--transparentBackground);
+    flex-wrap: wrap;
+    text-align: left;
+    width: 50%;
+}
