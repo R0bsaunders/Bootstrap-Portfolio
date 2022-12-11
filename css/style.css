@@ -40,12 +40,13 @@ a {
 }
 
 .navbar {
+    z-index: 100;
     position: fixed;
     width: 100%;
     padding: 0px;
     background-image: linear-gradient(to top,
     rgba(255,255,255,0.3),
-    rgba(255,255,255,1));
+    rgba(255,111,255,1));
     justify-content: space-between;
 }
 
