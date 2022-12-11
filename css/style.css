@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -20,7 +21,7 @@ p {
 
 small {
     color: black;
-    font-size: larger;
+    font-size: large;
 }
 
 h1 {
@@ -28,6 +29,21 @@ h1 {
     color: var(--brandColor);
 }
 
+/* Button Style */
+
+.btn-primary {
+    border-color: var(--brandColor);
+    background-color: transparent;
+    color: var(--brandColor);
+}
+
+.btn-primary:hover {
+    border-color: black;
+    transition: 0.5s;
+    background-color: var(--brandColor);
+    color: white !important;
+    box-shadow: 2px 2px rgba(000,000,000, .55);
+}
 /* Nav Bar */
 
 #logoImg {
@@ -43,6 +59,28 @@ li {
 
 a {
     color: var(--brandColor) !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    color: black !important;
+    transition: 0.5s;
+}
+
+.dropdown-menu {
+    background-color: var(--brandColor);
+}
+
+.btn-primary {
+    border-color: var(--brandColor);
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .navbar-brand {
@@ -62,7 +100,14 @@ a {
 
 .nav-item {
     margin: 0px 15px;
+}
 
+.navbar-expand-lg {
+    align-items: flex-start;
+}
+
+.navbar-toggler {
+    background-color: #fff;
 }
 
 /* Hero Section (Jumbotron) */
@@ -84,7 +129,7 @@ a {
     background-color: var(--transparentBackground);
     flex-wrap: wrap;
     text-align: left;
-    width: 50%;
+    width: 70%;
 }
 
 /* work Section */
@@ -96,12 +141,10 @@ a {
     min-height: 300px;
 }
 
-
-
 .work-ul {
     background-color: var(--transparentBackground);
     flex-wrap: wrap-reverse;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: -25px;
 }
 
@@ -111,6 +154,23 @@ a {
     color: white;
     margin-top: 50px;
     padding: 5px;
+}
+
+#card-description {
+    text-align: center;
+    background-color: var(--titleBackground);
+    color: white;
+    padding: 5px;
+}
+
+#card-description p {
+    font-size: 12px;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.mb-4 {
+    margin-bottom: 0 !important;
 }
 
 /* Column height */
@@ -131,7 +191,6 @@ a {
 
 .animate-icon {
     animation: pulse 1.5s infinite;
-    margin: 10px;
 }
 
 @keyframes pulse {
@@ -150,7 +209,23 @@ a {
 
 /* Contact section */
 
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+#about-me p {
+    width: 60%;
+    margin: 10px;
+}
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
 
 /* Footer Styles */
 
