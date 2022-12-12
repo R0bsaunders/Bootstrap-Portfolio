@@ -272,3 +272,36 @@ footer img:hover {
     transform: scale(1.25);
     box-shadow: 5px 10px rgba(000,000,000,.5);
 }
+
+@media screen and (max-width:480px)
+
+{
+    /* Prevents jumbo copy from overlappging header on smaller screens */
+
+    .jumbotron {
+        height: 55vh;
+        background-position: right;
+    }
+
+    .jumboCopy {
+        width: 100%
+    }
+
+    /* Allows main portfolio card to adjust height to contain content automtically */
+
+    .portfolio-height {
+        height: auto;
+    }
+
+    /* Card description copy width is increased to improve appearance on smaller and lower resolution devices */
+
+    #card-description p {
+        width: 95%;
+    }
+
+    /* Increases the width of the container for the paragraph of about me text */
+    
+    #about-me p {
+        width: 95%;
+    }
+}
